@@ -1,0 +1,3 @@
+.capitalize {
+    text-transform: capitalize; /* 単語の先頭だけ大文字にする */
+}
