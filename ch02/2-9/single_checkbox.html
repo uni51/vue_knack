@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>単体のチェックボックスに文字列をバインドする</title>
+  <link rel="stylesheet" href="../main.css">
+</head> 
+<body>
+
+<div id="app">
+  <label>ケーキはお好きですか？：{{ answer }}</label>
+  <input id="cake" type="checkbox" v-model="answer" true-value="はい" false-value="いいえ">
+  <label for="cake">チェックしてください</label>
+</div>
+
+<script src="https://jp.vuejs.org/js/vue.js"></script>
+<script src="single_checkbox.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ラジオボタンにバインドする</title>
+  <link rel="stylesheet" href="../main.css">
+</head> 
+<body>
+
+<div id="app">
+  <p>当店のサービスはいかがでしたか？：{{ answer }}</p>
+  <label>
+    <input type="radio" v-model="answer" value="素晴らしい">素晴らしい
+  </label>
+  <label>
+    <input type="radio" v-model="answer" value="普通">普通
+  </label>
+  <label>
+    <input type="radio" v-model="answer" value="まだまだ">まだまだ
+  </label>    
+</div>
+
+<script src="https://jp.vuejs.org/js/vue.js"></script>
+<script src="radio_button.js"></script>
+</body>
+</html>
