@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>応用例1（日付範囲の制限をする）</title>
+  <link rel="stylesheet" href="../main.css">
+</head> 
+<body>
+
+<div id="app">
+  <p>ご希望到着日：{{ arrival_date }}</p>
+  <input type="date" v-model="arrival_date" v-bind:min="min_date">
+</div>
+
+<script src="https://jp.vuejs.org/js/vue.js"></script>
+<script src="ouyou_01_carender.js"></script>
+</body>
+</html>
