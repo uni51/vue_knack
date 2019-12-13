@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>フェードイン・フェードアウト name属性値でエフェクトを分類する</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />  
+  <link rel="stylesheet" href="../main.css">
+</head> 
+<body>
+
+<div id="app">
+  <button v-on:click="show = !show">表示を切り替える</button>
+  <transition name="zoom"
+        enter-active-class="animated zoomIn" 
+        leave-active-class="animated zoomOut">
+    <p v-if="show">
+      吾輩は猫である。名前はまだ無い。<br>
+      どこで生まれたかとんと見当がつかぬ。<br>
+      何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+    </p>
+  </transition>
+</div>
+
+<script src="https://jp.vuejs.org/js/vue.js"></script>
+<script src="fade_in_out_03.js"></script>
+</body>
+</html>

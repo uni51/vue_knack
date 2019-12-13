@@ -1,0 +1,25 @@
+/* Enterフェーズ継続中と、Leaveフェーズ継続中のスタイル */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+/* Enterフェーズ開始前と、Leaveフェーズ終了後のスタイル */
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+/* Enterフェーズ継続中と、Leaveフェーズ継続中のスタイル */
+.slideInLeft-enter-active, .slideInLeft-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Enterフェーズ開始前と、Leaveフェーズ終了後のスタイル */
+.slideInLeft-enter, .slideInLeft-leave-to {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+/* Enterフェーズ終了時と、Leaveフェーズ開始時のスタイル */
+.slideInLeft-enter-to, .slideInLeft-leave {
+  transform: translateX(0%);
+}
