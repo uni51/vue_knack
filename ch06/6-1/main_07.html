@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>子から親にデータを引き渡す（引数ありのパターン）</title>
+</head>
+<body>
+
+<div id="app">
+  <!-- (4)「child-click」イベントが発生したら、親の「priceDown」を呼び出す -->
+  <my-product v-on:child-click="priceDown" v-bind:price="price"></my-product>
+</div>
+
+<script src="https://jp.vuejs.org/js/vue.js"></script>
+<script src="07_my-products.js"></script>
+<script src="main_07.js"></script>
+</body>
+</html>

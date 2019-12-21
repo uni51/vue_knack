@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>コンポーネントのイベントハンドリング</title>
+</head>
+<body>
+
+<div id="app">
+  <!-- (1)子コンポーネントをクリックすると、親の「priceDown」を呼び出す -->
+  <my-product v-on:click.native="priceDown" v-bind:price="price"></my-product>
+</div>
+
+<script src="https://jp.vuejs.org/js/vue.js"></script>
+<script src="08_my-products.js"></script>
+<script src="main_08.js"></script>
+</body>
+</html>
