@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>商品一覧</title>
+</head>
+<body>
+
+<div id="app">
+  <!-- データバインドで親の「name」と「price」を子に渡す -->
+  <my-product v-bind:name="name" v-bind:price="price"></my-product>
+</div>
+
+<script src="https://jp.vuejs.org/js/vue.js"></script>
+<script src="05_my-products.js"></script>
+<script src="main_05.js"></script>
+</body>
+</html>
