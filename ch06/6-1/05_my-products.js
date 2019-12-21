@@ -1,3 +1,4 @@
+// 親から子へデータを渡す（リアクティブなデータ）
 Vue.component('my-product', {
   template: `
     <div>

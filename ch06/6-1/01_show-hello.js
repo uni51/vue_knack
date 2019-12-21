@@ -1,3 +1,4 @@
+// コンポーネントの定義方法
 Vue.component('show-hello', {
   // テンプレート部分
   template: '<p>{{ message }}</p>',

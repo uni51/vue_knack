@@ -1,3 +1,4 @@
+// コンポーネントの基本構造
 Vue.component('my-products', {
   // テンプレート部分
   template: `

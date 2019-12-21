@@ -1,3 +1,4 @@
+// ローカルスコープのコンポーネント
 var myComponent = {
   // テンプレート部分
   template: `<p>{{ message }}</p>`,
