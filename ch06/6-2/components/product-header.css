@@ -1,0 +1,22 @@
+.pageTitle {
+  font-weight: normal;
+  border-bottom: 2px solid;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search .target {
+  display: inline-block;
+}
+
+.search .target label {
+  margin-right: 15px;
+}
+
+.search .sort {
+  display: inline-block;
+}
