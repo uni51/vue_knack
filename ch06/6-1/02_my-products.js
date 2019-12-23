@@ -1,4 +1,4 @@
-// コンポーネントの基本構造
+// リスト6：テンプレート内で改行する
 Vue.component('my-products', {
   // テンプレート部分
   template: `

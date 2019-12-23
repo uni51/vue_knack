@@ -1,4 +1,4 @@
-// コンポーネントの定義方法
+// リスト3：コンポーネントの基本構造
 Vue.component('show-hello', {
   // テンプレート部分
   template: '<p>{{ message }}</p>',
