@@ -12,7 +12,7 @@ var app = new Vue({
     //「セール対象」のチェック状態（true：チェック有り, false：チェック無し）
     showSaleItem: false,
     //「送料無料」のチェック状態（true：チェック有り, false：チェック無し）
-    showDelivFee: false,
+    showDelivFree: false,
     //「並び替え」の選択肢（1：標準、2：価格が安い順）
     sortOrder: 1,
     // 商品リスト

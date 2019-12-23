@@ -10,7 +10,7 @@ var app = new Vue({
     //「セール対象」のチェック状態（true：チェック有り, false：チェック無し）
     showSaleItem: false,
     //「送料無料」のチェック状態（true：チェック有り, false：チェック無し）
-    showDelivFee: false,
+    showDelivFree: false,
     //「並び替え」の選択肢（1：標準、2：価格が安い順）
     sortOrder: 1,
     // 商品リスト
@@ -36,7 +36,7 @@ var app = new Vue({
           //「セール対象」チェック有りで、セール対象商品ではない場合
           isShow = false; // この商品は表示しない
         }
-        if (this.showDelivFee && this.products[i].delv > 0) {
+        if (this.showDelivFree && this.products[i].delv > 0) {
           //「送料無料」チェック有りで、送料有りの商品の場合
           isShow = false; // この商品は表示しない          
         }
@@ -64,4 +64,4 @@ var app = new Vue({
       return this.filteredList.length;
     }
   }
-})
+});
