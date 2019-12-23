@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>リスト27：コンポーネントを繰り返し描画する（v-for）</title>
+</head>
+<body>
+
+<div id="app">
+  <!-- 子コンポーネントのテンプレートで配列データを展開する -->
+  <my-product v-for="item in products"
+              v-bind="item"
+              v-bind:key="item.id">
+  </my-product>
+</div>
+
+<script src="https://jp.vuejs.org/js/vue.js"></script>
+<script src="09_my-products.js"></script>
+<script src="main_09.js"></script>
+</body>
+</html>

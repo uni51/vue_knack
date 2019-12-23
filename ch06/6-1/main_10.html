@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>リスト31：コンポーネントの配置に関する制限</title>
+</head>
+<body>
+
+<div id="app">
+  <table border="1">
+    <tbody>
+      <!-- 商品データの配列を<tr>で繰り返し描画したい -->
+      <tr is="my-row" v-for="item in products" v-bind="item" v-bind:key="item.id"></tr>
+    </tbody>  
+  </table>
+</div>
+
+<script src="https://jp.vuejs.org/js/vue.js"></script>
+<script src="10_my-row.js"></script>
+<script src="main_10.js"></script>
+</body>
+</html>
