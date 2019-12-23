@@ -1,4 +1,4 @@
-// 親から子へデータを渡す
+// リスト10：親から子へデータを渡す
 Vue.component('my-product', {
   template: `
     <div>
